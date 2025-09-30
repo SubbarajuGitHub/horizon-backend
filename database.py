@@ -5,8 +5,8 @@ import os
 from datetime import datetime
 import boto3
 
-MONGODB_URL  = "mongodb+srv://subbaraju:chekuri@horizon.atazxwo.mongodb.net/?retryWrites=true&w=majority&appName=horizon"
-DATABASE_NAME = "horizon"
+MONGODB_URL  = ""
+DATABASE_NAME = ""
 
 # Async MongoDB client (for FastAPI)
 client: Optional[AsyncIOMotorClient] = None

@@ -27,11 +27,11 @@ from schemas import (
     ModelPerformanceResponse
 )
 
-R2_ACCOUNT_ID = "7bd6729b4621d457621491ed5ac6af8d"
-R2_ACCESS_KEY_ID = "14efa6db9398c3cd0398e16f110f9c38"
-R2_SECRET_ACCESS_KEY = "4f4c21f5b3267d7a3626bdde4c0f40f2638e8efe14e48465bfdfc978a635b237"
-R2_BUCKET_NAME = "horizon"
-R2_ENDPOINT_URL = "https://7bd6729b4621d457621491ed5ac6af8d.r2.cloudflarestorage.com"
+R2_ACCOUNT_ID = ""
+R2_ACCESS_KEY_ID = ""
+R2_SECRET_ACCESS_KEY = ""
+R2_BUCKET_NAME = ""
+R2_ENDPOINT_URL = ""
 
 s3_client = boto3.client(
     "s3",

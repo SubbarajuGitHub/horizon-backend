@@ -80,7 +80,7 @@ uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
 API will be available at: `http://localhost:8000`
 
-Interactive docs: `http://localhost:8000/docs`
+Interactive docs: `https://horizon-backend-lcax.onrender.com/docs`
 
 ## 📡 API Endpoints
 
