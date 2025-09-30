@@ -5,8 +5,11 @@ import os
 from datetime import datetime
 import boto3
 
-MONGODB_URL  = ""
-DATABASE_NAME = ""
+from dotenv import load_dotenv
+load_dotenv()
+
+MONGODB_URL  =  os.getenv("MONGODB_URL")
+DATABASE_NAME = os.getenv("DATABASE_NAME")
 
 # Async MongoDB client (for FastAPI)
 client: Optional[AsyncIOMotorClient] = None
