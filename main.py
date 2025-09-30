@@ -9,6 +9,8 @@ import uuid
 import boto3
 from io import BytesIO
 from botocore.exceptions import ClientError
+import os
+from dotenv import load_dotenv
 
 from models import ChurnPredictor
 from database import (
@@ -27,11 +29,13 @@ from schemas import (
     ModelPerformanceResponse
 )
 
-R2_ACCOUNT_ID = ""
-R2_ACCESS_KEY_ID = ""
-R2_SECRET_ACCESS_KEY = ""
-R2_BUCKET_NAME = ""
-R2_ENDPOINT_URL = ""
+load_dotenv()
+
+R2_ACCOUNT_ID = os.getenv("R2_ACCOUNT_ID")
+R2_ACCESS_KEY_ID = os.getenv("R2_ACCESS_KEY_ID")
+R2_SECRET_ACCESS_KEY = os.getenv("R2_SECRET_ACCESS_KEY")
+R2_BUCKET_NAME = os.getenv("R2_BUCKET_NAME")
+R2_ENDPOINT_URL = os.getenv("R2_ENDPOINT_URL")
 
 s3_client = boto3.client(
     "s3",
